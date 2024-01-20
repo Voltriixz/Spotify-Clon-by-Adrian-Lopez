@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Clon</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <main class="main-container">
@@ -32,11 +32,11 @@
             </ul>
         </div>
 
-        <!-- SideBottomBar -->
+        <!-- SideBottomBar --> <!-- TERMINAR DE AÑADIR PLAYLIST LATERALES -->
         <div class="side-botom-bar">
             <header>
                 <div class="biblioteca">
-                    <button><a href="#" class="icono"><i class="fa-regular fa-bookmark"></i></i>Tus biblioteca</a></button>
+                    <button><a href="#" class="icono"><span><i class="fa-regular fa-bookmark"></i></span>Tus biblioteca</a></button>
                     <button><a href="#"><div class="icono"><i class="fa-solid fa-plus"></i></div></a></button>
                     <button><a href="#"><div class="icono"><i class="fa-solid fa-arrow-right"></i></div></a></button>
                 </div>
@@ -48,6 +48,11 @@
                     <span><a href="#">Artistas</a></span>
                     <span><a href="#">&Aacute;lbumes</a></span>
                     <span><a href="#">P&oacute;dcast y programas</a></span>
+                </div>
+                <div class="search">
+                    <span class="search-icon" onclick="toggleSearch()">
+                        <a href="#"><i class="fas fa-magnifying-glass"></i></a></span>
+                    <input type="text" class="search-input" id="searchInput" placeholder="Buscar...">
                 </div>
             </div>
         </div>
@@ -86,7 +91,7 @@
                     </div>
                     <div class="recent-content">
                         <div class="EP-1-recent">
-                            <span><a href="#"><img src="img/Dias-Antes-De-La-Darkera.jpeg" alt="Dias-Antes-De-La-Darkera">Dias Antes De La Darkera</a></span>
+                            <span class="search-icon" onclick="toggleSearch()"><a href="#"><img src="img/Dias-Antes-De-La-Darkera.jpeg" alt="Dias-Antes-De-La-Darkera">Dias Antes De La Darkera</a></span>
                         </div>
                     </div>
                 </div>
@@ -94,6 +99,8 @@
         </div>
     </main>
 
+    <!-- Scripts-->
+    <script src="JS/script.js"></script>
     <!-- Script de FontAwesome -->
     <script src="https://kit.fontawesome.com/5fe6d1736f.js" 
     crossorigin="anonymous"></script>
